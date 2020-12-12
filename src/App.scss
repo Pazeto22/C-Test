@@ -1,6 +1,9 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
 body {
   background-color: #f2f2f2;
-  font-family: "Nunito", sans-serif;
 }
 
 .view {
@@ -8,4 +11,14 @@ body {
   padding-left: 14%;
   padding-right: 14%;
   margin: 0 auto;
+
+  @media (max-width: 800px) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
