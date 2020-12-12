@@ -1,6 +1,6 @@
 import React from "react";
-
 import "./styles.scss";
+
 import logo from "../../../assets/logo.svg";
 import { ReactComponent as Hmenu } from "../../../assets/ico/hmenu.svg";
 import { ReactComponent as SearchIco } from "../../../assets/ico/search.svg";
