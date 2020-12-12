@@ -43,7 +43,7 @@ export default function SwiperBanner() {
         <SwiperSlide>
           <SlideContent
             h3Content={"Dúvidas sobre as formas de pagamento?"}
-            h1Content={"Entenda todas e comece a lucrar mais"}
+            h1Content={"Entenda todas e passe a lucrar mais"}
             Banner={Banner4}
           />
         </SwiperSlide>
