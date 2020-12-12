@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.scss";
 
-import Navbar from "./components/ui/Navbar";
+import Home from "./pages/Home/";
 
 export default function App() {
-  return <Navbar />;
+  return <Home />;
 }
