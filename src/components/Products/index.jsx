@@ -20,7 +20,7 @@ export default function Products({ product }) {
       </div>
       <div className="product-info">
         <div className="product-title">
-          <span>SAPATO FLOATER PRETO</span>
+          <span>{product.productName}</span>
           <div className="product-rank">
             <FillStar />
             <EmptyStar />
