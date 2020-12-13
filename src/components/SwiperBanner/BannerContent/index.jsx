@@ -2,7 +2,7 @@ import React from "react";
 
 import TextShape from "assets/images/bannershape.svg";
 
-export default function SlideContent({ Banner, h3Content, h1Content }) {
+export default function BannerContent({ Banner, h3Content, h1Content }) {
   return (
     <div className="banner-wrapper">
       <div className="banner-text-container">

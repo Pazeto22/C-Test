@@ -1,0 +1,48 @@
+.top-sellers-title {
+  user-select: none;
+  h2 {
+    font-weight: 900;
+    font-size: 20px;
+
+    &:after {
+      content: "";
+      width: 65px;
+      height: 4px;
+      background-color: #c0c0c0;
+      display: block;
+    }
+  }
+}
+
+// Swiper
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+  color: black;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.swiper-pagination,
+.swiper-pagination-bullets {
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}
+
+div.swiper-button-prev::after {
+  margin-right: 2.1rem;
+  content: url(../../assets/ico/leftarrow.svg);
+}
+
+div.swiper-button-next::after {
+  margin-left: 2.1rem;
+  content: url(../../assets/ico/rightarrow.svg);
+}

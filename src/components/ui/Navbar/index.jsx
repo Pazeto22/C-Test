@@ -1,15 +1,15 @@
 import React from "react";
 import "./styles.scss";
 
-import logo from "../../../assets/logo.svg";
-import { ReactComponent as Hmenu } from "../../../assets/ico/hmenu.svg";
-import { ReactComponent as SearchIco } from "../../../assets/ico/search.svg";
-import { ReactComponent as UserIco } from "../../../assets/ico/user.svg";
-import { ReactComponent as CartIco } from "../../../assets/ico/cart.svg";
+import logo from "assets/logo.svg";
+import { ReactComponent as Hmenu } from "assets/ico/hmenu.svg";
+import { ReactComponent as SearchIco } from "assets/ico/search.svg";
+import { ReactComponent as UserIco } from "assets/ico/user.svg";
+import { ReactComponent as CartIco } from "assets/ico/cart.svg";
 
 export default function Navbar() {
   return (
-    <container className="navbar-container">
+    <div className="navbar-container">
       <div className="view navbar-wrapper">
         <div className="mobile-menu">
           <Hmenu />
@@ -40,6 +40,6 @@ export default function Navbar() {
           <span>1</span>
         </div>
       </div>
-    </container>
+    </div>
   );
 }
