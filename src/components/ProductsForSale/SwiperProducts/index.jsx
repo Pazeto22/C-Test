@@ -13,20 +13,12 @@ import errorRequest from "common/errorRequest.js";
 
 export default function SwiperProducts() {
   const [products, setProducts] = useState();
-  const [showProducts, setShowProducts] = useState(4);
-  const [isNavigation, setIsNavigation] = useState(true);
-  const [isPagination, setIsPagination] = useState(false);
 
   useEffect(() => {
     fetchProducts();
   }, []);
 
   async function fetchProducts() {
-    if (window.innerWidth <= 1024) {
-      setShowProducts(2);
-      setIsNavigation(false);
-      setIsPagination(true);
-    }
     try {
       const { data } = await api.get(`products`);
       setProducts(data);
