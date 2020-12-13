@@ -30,13 +30,13 @@ export default function Products({ product }) {
           <span>{product.productName}</span>
           <div className="product-rank">
             {ProductsRatio.map((ProductRatio) => (
-              <>
+              <span key={ProductRatio.star}>
                 {ProductRatio.star <= product.stars ? (
                   <FillStar />
                 ) : (
                   <EmptyStar />
                 )}
-              </>
+              </span>
             ))}
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Products({ product }) {
         </div>
       </div>
       <div className="product-button">
-        <button className="product-buy">Comprar</button>
+        <button className="primary-button">COMPRAR</button>
       </div>
     </div>
   );
