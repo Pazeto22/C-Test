@@ -7,6 +7,13 @@ import { ReactComponent as FillStar } from "assets/ico/fillstar.svg";
 import { ReactComponent as EmptyStar } from "assets/ico/emptystar.svg";
 
 export default function Products({ product }) {
+  const ProductsRatio = [
+    { star: 1 },
+    { star: 2 },
+    { star: 3 },
+    { star: 4 },
+    { star: 5 },
+  ];
   return (
     <div className="product-wrapper">
       <div className="product-img">
@@ -22,11 +29,15 @@ export default function Products({ product }) {
         <div className="product-title">
           <span>{product.productName}</span>
           <div className="product-rank">
-            <FillStar />
-            <EmptyStar />
-            <EmptyStar />
-            <EmptyStar />
-            <EmptyStar />
+            {ProductsRatio.map((ProductRatio) => (
+              <>
+                {ProductRatio.star <= product.stars ? (
+                  <FillStar />
+                ) : (
+                  <EmptyStar />
+                )}
+              </>
+            ))}
           </div>
         </div>
         <div className="product-price">
